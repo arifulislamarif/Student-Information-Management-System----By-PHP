@@ -1,0 +1,22 @@
+<script src="assets/js/sweetalert.min.js"></script>
+<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+
+<?php
+  if (isset($_SESSION["login_status"])) {
+?>
+
+<script>
+
+  swal({
+    title: "Welcome",
+    text: "You clicked the button!",
+    icon: "success",
+    button: "Aww yiss!",
+  });
+</script>
+
+<?php
+
+  unset($_SESSION["login_status"]);
+}
+?>

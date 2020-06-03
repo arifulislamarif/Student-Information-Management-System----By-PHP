@@ -1,0 +1,65 @@
+
+
+<?php
+  if (isset($_SESSION['empty'])) {
+?>
+
+<div class="alert alert-danger alert-dismissible fade show mb-3" role="alert">
+    <strong>You must be provide all fields!</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">×</span>
+    </button>
+</div>
+
+<?php
+  unset($_SESSION['empty']);
+}
+?>
+
+<?php
+  if (isset($_SESSION['letter_allow'])) {
+?>
+
+<div class="alert alert-danger alert-dismissible fade show mb-3" role="alert">
+    <strong>Name must be letter!</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">×</span>
+    </button>
+</div>
+
+<?php
+  unset($_SESSION['letter_allow']);
+}
+?>
+
+<?php
+  if (isset($_SESSION['letter_not_allow'])) {
+?>
+
+<div class="alert alert-danger alert-dismissible fade show mb-3" role="alert">
+    <strong>Roll must be numeric!</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">×</span>
+    </button>
+</div>
+
+<?php
+  unset($_SESSION['letter_not_allow']);
+}
+?>
+
+<?php
+  if (isset($_SESSION['must_be_six'])) {
+?>
+
+<div class="alert alert-danger alert-dismissible fade show mb-3" role="alert">
+    <strong>Roll must be 6 digit!</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">×</span>
+    </button>
+</div>
+
+<?php
+  unset($_SESSION['must_be_six']);
+}
+?>
